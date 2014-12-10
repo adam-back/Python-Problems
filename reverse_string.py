@@ -13,5 +13,3 @@ def reverse_string(word):
     return output
   else:
     return False
-
-print reverse_string('Adam')
