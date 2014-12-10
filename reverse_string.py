@@ -10,6 +10,8 @@ def reverse_string(word):
     for letter in letters:
       output += letter
   
-  return output
+    return output
+  else:
+    return False
 
 print reverse_string('Adam')
