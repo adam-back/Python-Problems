@@ -5,3 +5,4 @@
 # See format_phone_number_unittests.py for cases.
 
 def pretty_print_phone(userPhone):
+  return False
