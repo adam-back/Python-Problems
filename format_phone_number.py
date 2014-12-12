@@ -6,6 +6,12 @@
 
 def pretty_print_phone(userPhone):
   if (type(userPhone) is int) or (type(userPhone) is str):
-    return True
+    #find all numbers 
+    #if 7 numbers
+      #place - after third number
+    #else if 10 number
+      #place (), space, and -
+    #else
+      #return False because the numbers are too many/few 
   else:
     return False
