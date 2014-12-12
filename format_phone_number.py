@@ -14,12 +14,13 @@ def pretty_print_phone(userPhone):
 
     if len(numbers) == 7:
       numbers.insert(3, '-')
-      # return numbers.
+      return create_string_from_list(numbers)
     elif len(numbers) == 10:
       numbers.insert(0, '(')
       numbers.insert(4, ')')
       numbers.insert(5, ' ')
       numbers.insert(9, '-')
+      return create_string_from_list(numbers)
     else:
       #return False because the numbers are too many/few 
       return False

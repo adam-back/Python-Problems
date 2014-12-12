@@ -18,7 +18,7 @@ class TestCases(unittest.TestCase):
     isString = create_string_from_list(['1','2','3'])
     self.assertTrue(type(isString) == str)
     self.assertEqual(isString, '123')
-    
+
   def test_find_numbers_with_chars(self):
     numbers = find_all_numbers('123-123 433)')
     self.assertEqual(numbers, ['1','2','3','1','2','3','4','3','3'])
