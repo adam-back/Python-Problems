@@ -1,5 +1,5 @@
 import unittest
-from format_phone_number import pretty_print_phone, find_all_numbers
+from format_phone_number import pretty_print_phone, find_all_numbers, create_string_from_list
 
 class TestCases(unittest.TestCase):
   def test_phone_type(self):
@@ -14,6 +14,11 @@ class TestCases(unittest.TestCase):
     numbers = find_all_numbers('123')
     self.assertEqual(numbers, ['1','2','3'])
 
+  def test_create_string(self):
+    isString = create_string_from_list(['1','2','3'])
+    self.assertTrue(type(isString) == str)
+    self.assertEqual(isString, '123')
+    
   def test_find_numbers_with_chars(self):
     numbers = find_all_numbers('123-123 433)')
     self.assertEqual(numbers, ['1','2','3','1','2','3','4','3','3'])
