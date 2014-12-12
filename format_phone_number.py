@@ -3,6 +3,7 @@
 # The number may be 7 or 10 digits.
 #
 # See format_phone_number_unittests.py for cases.
+import re
 
 def pretty_print_phone(userPhone):
   if (type(userPhone) is int) or (type(userPhone) is str):
@@ -13,5 +14,11 @@ def pretty_print_phone(userPhone):
       #place (), space, and -
     #else
       #return False because the numbers are too many/few 
+      return True
   else:
     return False
+
+def find_all_numbers(n):
+  stringy = str(n)
+  numbers =  re.search('[0-9]', stringy).group()
+  print numbers

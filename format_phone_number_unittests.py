@@ -1,10 +1,18 @@
 import unittest
-from format_phone_number import pretty_print_phone
+from format_phone_number import pretty_print_phone, find_all_numbers
 
 class TestCases(unittest.TestCase):
   def test_phone_type(self):
     pretty = pretty_print_phone(True)
     self.assertFalse(pretty)
+
+  def test_find_numbers_as_number(self):
+    numbers = find_all_numbers(123)
+    self.assertEqual(numbers, 123)
+
+  def test_find_numbers_as_string(self):
+    numbers = find_all_numbers('123')
+    self.assertEqual(numbers, 123)
 
   def test_phone_7_nums_only(self):
     pretty = pretty_print_phone(1234567)
