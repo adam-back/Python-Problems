@@ -8,11 +8,15 @@ class TestCases(unittest.TestCase):
 
   def test_find_numbers_as_number(self):
     numbers = find_all_numbers(123)
-    self.assertEqual(numbers, 123)
+    self.assertEqual(numbers, '123')
 
   def test_find_numbers_as_string(self):
     numbers = find_all_numbers('123')
-    self.assertEqual(numbers, 123)
+    self.assertEqual(numbers, '123')
+
+  def test_find_numbers_with_chars(self):
+    numbers = find_all_numbers('123-123 433)')
+    self.assertEqual(numbers, '123123433')
 
   def test_phone_7_nums_only(self):
     pretty = pretty_print_phone(1234567)

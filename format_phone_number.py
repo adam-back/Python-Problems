@@ -19,6 +19,8 @@ def pretty_print_phone(userPhone):
     return False
 
 def find_all_numbers(n):
-  stringy = str(n)
-  numbers =  re.search('[0-9]', stringy).group()
-  print numbers
+  found_numbers = ''
+  numbers =  re.findall('[0-9]', str(n))
+  for digit in numbers:
+   found_numbers += digit
+  return found_numbers
