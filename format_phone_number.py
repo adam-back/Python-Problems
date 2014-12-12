@@ -5,4 +5,7 @@
 # See format_phone_number_unittests.py for cases.
 
 def pretty_print_phone(userPhone):
-  return False
+  if (type(userPhone) is int) or (type(userPhone) is str):
+    return True
+  else:
+    return False
