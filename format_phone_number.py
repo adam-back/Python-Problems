@@ -8,19 +8,18 @@ import re
 def pretty_print_phone(userPhone):
   if (type(userPhone) is int) or (type(userPhone) is str):
     #find all numbers 
-    #if 7 numbers
+    numbers = find_all_numbers(userPhone)
+
+    if len(numbers) == 7 or len(numbers) == 10:
       #place - after third number
-    #else if 10 number
-      #place (), space, and -
-    #else
-      #return False because the numbers are too many/few 
       return True
+    else:
+      #return False because the numbers are too many/few 
+      return False
   else:
     return False
 
 def find_all_numbers(n):
   found_numbers = ''
   numbers =  re.findall('[0-9]', str(n))
-  for digit in numbers:
-   found_numbers += digit
-  return found_numbers
+  return numbers
