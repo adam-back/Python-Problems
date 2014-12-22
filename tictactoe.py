@@ -12,3 +12,10 @@ def coputer_choice():
 
 def make_board():
 
+# Make a board
+# Flip a coin, decide if user or AI goes first
+# Print board with rows and columns (pretty print)
+# Prompt user for choices
+# Print new board with piece placed
+  # Check for win or lose
+# Complete until win or cat's game occurs
