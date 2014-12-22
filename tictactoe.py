@@ -8,9 +8,14 @@ def check_columns():
 
 def check_diagonals():
 
-def coputer_choice():
+def computer_choice():
 
 def make_board():
+  board = [];
+  # User for loop to push three empty arrays, each with 3
+  # spaces, to the board
+
+  return board
 
 # Make a board
 # Flip a coin, decide if user or AI goes first
