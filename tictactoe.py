@@ -12,13 +12,31 @@
 
 def make_board():
   board = [];
-  # User for loop to push three empty arrays, each with 3
-  # spaces, to the board
+
   for i in range(3):
     board.append(["_","_","_"])
 
-  print board
+  # 3x3 matrix
   return board
+
+def print_board(board):
+  row = 0
+  # Try to edit copy, not original <---- Currently not working
+  pretty_board = board
+  # for all rows on the board
+  while row < len(pretty_board):
+    # insert the row number at the front of the sub-array
+    pretty_board[row].insert(0, row + 1)
+    # move on to the next row
+    row += 1
+
+  # Add column references
+  pretty_board.insert(0, ['','A','B','C'])
+
+  # print pretty_board
+
+  # return only for testing purposes
+  return pretty_board
 
 # Make a board
 # Flip a coin, decide if user or AI goes first
