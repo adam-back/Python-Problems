@@ -6,7 +6,7 @@ class tic_tac_toe_TestCase(unittest.TestCase):
     self.assertTrue(True)
 
   def test_make_board(self):
-    board = tictactoe.test_make_board()
+    board = tictactoe.make_board()
     self.assertEqual(board, [["_","_","_"],
                              ["_","_","_"],
                              ["_","_","_"]]);

@@ -1,20 +1,23 @@
-def tic_tac_toe(board, choices):
+# def tic_tac_toe(board, choices):
 
-def place_choice(marker, x, y):
+# def place_choice(marker, x, y):
 
-def check_rows():
+# def check_rows():
 
-def check_columns():
+# def check_columns():
 
-def check_diagonals():
+# def check_diagonals():
 
-def computer_choice():
+# def computer_choice():
 
 def make_board():
   board = [];
   # User for loop to push three empty arrays, each with 3
   # spaces, to the board
+  for i in range(3):
+    board.append(["_","_","_"])
 
+  print board
   return board
 
 # Make a board

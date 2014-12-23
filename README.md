@@ -13,5 +13,5 @@ To simply run toy problems in the terminal:
 To run test suite:
 #############
 1. Same as step one above.
-1. Type `python unittests.py`.
+1. Type `python <test_file_name>.py`.
 1. Outputs, such as passes, failures, and errors will display.
