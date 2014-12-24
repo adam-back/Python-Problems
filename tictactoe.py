@@ -11,7 +11,7 @@
 # def computer_choice():
 
 def make_board():
-  board = [];
+  board = []
 
   for i in range(3):
     board.append(["_","_","_"])
