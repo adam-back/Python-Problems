@@ -1,12 +1,14 @@
+import random
+
 # def tic_tac_toe(board, choices):
 
-# def place_choice(marker, x, y):
+# def place_choice(board, marker, x, y):
 
-# def check_rows():
+# def check_rows(board):
 
-# def check_columns():
+# def check_columns(board):
 
-# def check_diagonals():
+# def check_diagonals(board):
 
 # def computer_choice():
 
