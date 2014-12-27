@@ -13,32 +13,42 @@ import random
 # def computer_choice():
 
 def make_board():
-  board = []
+  newBoard = []
 
   for i in range(3):
-    board.append(["_","_","_"])
+    newBoard.append(["_","_","_"])
 
   # 3x3 matrix
-  return board
+  return newBoard
 
 def print_board(board):
   row = 0
   # Try to edit copy, not original <---- Currently not working
-  pretty_board = board
+  board
   # for all rows on the board
-  while row < len(pretty_board):
+  while row < len(board):
     # insert the row number at the front of the sub-array
-    pretty_board[row].insert(0, row + 1)
+    board[row].insert(0, row + 1)
     # move on to the next row
     row += 1
-
   # Add column references
-  pretty_board.insert(0, ['','A','B','C'])
+  board.insert(0, ['','A','B','C'])
+  prettyBoard = board
+  # Print pretty board
+  print prettyBoard
 
-  # print pretty_board
+
+  # change board back to original states
+  while row >= 0:
+    # insert the row number at the front of the sub-array
+    del board[row][0]
+    # move on to the next row
+    row -= 1
+  del board[0]
 
   # return only for testing purposes
-  return pretty_board
+  return "Original:" + board +"\nPretty:" + prettyBoard
+
 
 # Make a board
 # Flip a coin, decide if user or AI goes first
