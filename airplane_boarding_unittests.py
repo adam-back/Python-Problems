@@ -1,5 +1,5 @@
 import unittest
-from airplaneBoarding import create_row, generate_seat_map
+from airplaneBoarding import create_row, generate_seat_map, pretty_print_seats
 
 class flattenTestCase(unittest.TestCase):
   def test_create_row_CRJ700(self):
@@ -35,6 +35,10 @@ class flattenTestCase(unittest.TestCase):
                                 [[],[],'',[],[]],
                                 [[],[],'',[],[]]
                                 ])
+  def test_pretty_print(self):
+    "Should print seatmaps with newline; check visually."
+    seat_map = generate_seat_map(13,4,[2])
+    pretty_print_seats(seat_map)
 
 if __name__ == '__main__':
     unittest.main()

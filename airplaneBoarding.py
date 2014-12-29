@@ -21,5 +21,10 @@ def generate_seat_map(rows, seats_in_row, aisle):
 
   for row_num in range(0, rows):
     seat_map.append(row)
-    
+
   return seat_map
+
+def pretty_print_seats(seat_map):
+  print "\n"
+  for row in range(0, len(seat_map)):
+    print str(seat_map[row]) + "\n"
