@@ -15,10 +15,11 @@ def create_row(num_seats, aisle):
 
   return row
 
-def generate_seat_map(rows, seats_in_row):
+def generate_seat_map(rows, seats_in_row, aisle):
   seat_map = []
-  seats = 0
-  row = []
-  while seats < seats_in_row:
-    row.append([]);
+  row = create_row(seats_in_row, aisle)
+
+  for row_num in range(0, rows):
+    seat_map.append(row)
+    
   return seat_map
