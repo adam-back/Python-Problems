@@ -16,6 +16,7 @@ def create_row(num_seats, aisle):
   return row
 
 def generate_seat_map(rows, seats_in_row, aisle):
+  "Create a seat map. Aisle is an array of values."
   seat_map = []
   row = create_row(seats_in_row, aisle)
 
