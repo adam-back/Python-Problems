@@ -14,7 +14,7 @@ class tic_tac_toe_TestCase(unittest.TestCase):
   def test_print_board_pretty(self):
     board = tictactoe.make_board()
     prettyBoard = tictactoe.print_board(board);
-    # Should print pretty
+    # Should print pretty, but not change original
     self.assertEqual(prettyBoard, [['','A','B','C'],
                                    [1, "_","_","_"],
                                    [2, "_","_","_"],
@@ -26,7 +26,7 @@ class tic_tac_toe_TestCase(unittest.TestCase):
     prettyBoard = tictactoe.print_board(board);
     self.assertEqual(board, [["_","_","_"],
                              ["_","_","_"],
-                             ["_","_","_"]]);
+                             ["_","_","_"]])
     
 if __name__ == '__main__':
     unittest.main()

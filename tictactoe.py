@@ -44,11 +44,9 @@ def print_board(board):
     del board[row][0]
     # move on to the next row
     row -= 1
+  
   del board[0]
-
-  # return only for testing purposes
-  return "Original:" + board +"\nPretty:" + prettyBoard
-
+  return
 
 # Make a board
 # Flip a coin, decide if user or AI goes first
